@@ -5,6 +5,13 @@ const database = require("./database");
 
 
 const booky = express();
+/*
+Route           /
+Description     Get all the books
+Access          PUBLIC
+Parameter       None
+Methods         GET
+*/
 
 booky.get("/", (req, res) => {
     return res.json({books: database.books});
