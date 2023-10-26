@@ -18,10 +18,10 @@
 
 //1.BOOK
 //We need an API:-
-//To get all the books
-//To get a speecific  book
-//To get a list of book based on category
-//To get a list of book based on Languges
+//To get all the books                        => Done
+//To get a speecific  book                    => Done
+//To get a list of book based on category     => Done
+//To get a list of book based on Languges     => Done
 
 //2.AUTHORS
 //We need an API :-
