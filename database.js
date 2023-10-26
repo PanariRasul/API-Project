@@ -18,6 +18,36 @@ const books = [
         author:[1,2],
         publications:[1],
         category:["tech"]
+    },
+    {
+        ISBN:"12347Book",
+        title: "R A N G E R O V E R",
+        pubDate:"2023/10/23",
+        language:"en",
+        numPage:250,
+        author:[1,2],
+        publications:[1],
+        category:["tech"]
+    },
+    {
+        ISBN:"12348Book",
+        title: "R A N G E R O V E R",
+        pubDate:"2023/10/23",
+        language:"en",
+        numPage:250,
+        author:[1,2],
+        publications:[1],
+        category:["tech"]
+    },
+    {
+        ISBN:"12349Book",
+        title: "R A N G E R O V E R",
+        pubDate:"2023/10/23",
+        language:"en",
+        numPage:250,
+        author:[1,2],
+        publications:[1],
+        category:["tech"]
     }
 ]
 
