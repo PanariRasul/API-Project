@@ -92,26 +92,44 @@ booky.get ("/author", (req, res) => {
 
 /*
 Route           /author
-Description     Get all the Author
+Description     Get specific author
 Access          PUBLIC
 Parameter       Name
 Methods         GET
 */
-// To be continue
 booky.get("/author/:name",(req,res) => {
     const getSpecificAuthor = database.author.filter (
         (author) => author.name === req.params.name
     );
 
     if(getSpecificAuthor.length === 0) {
-        return res.json({error:`No Book found for the Author of ${req.params.name}`})
+        return res.json({error:`No Speccific Author ${req.params.name}`})
     }
 
     return res.json({author: getSpecificAuthor});
 });
 
+/*
+Route           /author
+Description     To get a lsit of authors based on book 
+Access          PUBLIC
+Parameter       ISBN
+Methods         GET
+*/
 
 
+booky.get("/author/book/:isbn", (req,res) => {
+    const getSpecificAuthor = database.author.filter(
+        (author) => author.books.includes(req.params.isbn)
+    );
+
+    if(getSpecificAuthor.length === 0){
+        return res.json({
+        error: `No author found for the book of ${req.params.isbn}`
+        });
+    }
+    return res.json({authors: getSpecificAuthor});
+});
 
 
 
