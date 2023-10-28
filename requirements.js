@@ -1,36 +1,55 @@
-//Requirements for our Project.
+//Requirement for our project
 
-//We are a Book Mangement conmpany
+//We are a book management company
 
-// Books
-//ISBN, TITLE, PUB-DATE, LANGUAGE, NUM-PAGE, AUTHOR[], CATEGORY[]
+//BOOKS
+//ISBN, title, pub date, language, num page, author[], category[]
 
+//AUTHORS
+//id, name, books[]
 
-//Authors
-//ID, NAME, BOOKS[]
+//PUBLICATIONS
+//id, name, books[]
 
-//Publication
-//ID, NAME, BOOKS[]
+//We have to design and code an API over this .
 
-
-//WE HAVE TO DESIGN AND CODE AN API OVER THIS 
-
-
-//1.BOOK
-//We need an API:-
-//To get all the books                        => Done
-//To get a speecific  book                    => Done
-//To get a list of book based on category     => Done
-//To get a list of book based on Languges     => Done
-
-//2.AUTHORS
+//1. BOOKS
 //We need an API :-
-//To get all the authors
-//To get a Specific Author
-//To get a lsit of authors based on book
+//To get all the books - DONE
+//To get specific book - DONE
+//To get a list of books based on category - DONE
+//To get a list of books based on languages - UR TASK
 
-//3.PUBLICATION
-//We need an API:-
+//2. AUTHORS
+//We need an API :-
+//To get all the authors - DONE
+//To get a specific author based on id- YOUR  TASK
+//To get a list of authors based on books - DONE
+
+//3. PUBLICATIONS
+//We need an API :-
 //To get all the publications
-//To get a specific Publication
-//To get a list of Publication based on a books
+//To get a specific publication - YOUR  TASK
+//To get a list of publications based on a book - YOUR TASK
+
+
+
+//POST REQUEST
+//1. ADD NEW BOOK - DONE
+//2.ADD NEW PUBLICATION -
+//3.ADD NEW AUTHOR
+
+/**********PUT***********/
+//Update book details if author is changed. - DONE
+
+/*****DELETE****/
+//1. Delete a book - DONE
+//2. Delete author from book - UR TASK
+//3. Delete author from book and related book from author -
+
+//Schema - Blueprint of how data has to be constructed
+//MongoDB is schemaless
+//mongoose has schema
+//mongoose - validation , relationship with other data.
+//model -> document model of MongoDB
+//Schema -> Model -> use them .
