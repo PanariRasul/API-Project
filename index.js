@@ -20,12 +20,12 @@ booky.use(bodyParser.urlencoded({
 }));
 booky.use(bodyParser.json());
 
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true
-}).then(() => console.log("Connection Established"));
+// mongoose.connect(process.env.MONGO_URL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useFindAndModify: false,
+//     useCreateIndex: true
+// }).then(() => console.log("Connection Established"));
 
 
 
@@ -361,5 +361,5 @@ booky.delete("/book/delete/author/:isbn/:authorId", (req, res) => {
 
 
 booky.listen(3000, () => {
-    console.log("Server is running on port");
+    console.log("Server is running on port 3000");
 });
